@@ -6,7 +6,11 @@
   
   "scripts": {
     "test": "npx wdio run ./wdio.conf.js",
-    "wdio": "wdio run wdio.conf.js"
+    "wdio": "wdio run wdio.conf.js",
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "cy:dashboard": "",
+    "cy:report": ""
 },
   "dependencies": {
     "agent-base": "^6.0.2",
@@ -300,9 +304,6 @@
     "@wdio/spec-reporter": "^7.19.7",
     "mocha": "^10.0.0",
     "wdio-wait-for": "^2.2.6"
-  },
-  "scripts": {
-    "test": "mocha"
   },
   "repository": {
     "type": "git",

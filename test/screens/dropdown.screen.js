@@ -1,12 +1,14 @@
 class DropdownScreen {
+    
     get #SelectAnItem(){
-        return $('android.widget.TextView')
+        return $('~Dropdown')
     }
 
     async setSelectAnItem(item){
-        this.#SelectAnItem.click()
+        await this.#SelectAnItem.click()
+        await $(`android=new UiSelector().text("${item}")`).click()
     }
 }  
 
 
-module.exports = new DropdownScreen
+module.exports = new DropdownScreen()

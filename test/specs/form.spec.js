@@ -4,10 +4,11 @@ const homeScreen = require("../screens/home.screen");
 
 describe('Access Form Panel', () => {
     it('should fill form', async () => {
-        await homeScreen.enterAppForms()
+        await homeScreen.clickMenuForms()
         await formScreen.setInputField('Gabriela')
         await dropdownScreen.setSelectAnItem('This app is awesome')
-        await formScreen.continue()
+        await formScreen.clickbuttonactive() 
+        
     });
 })
 
